@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bus Ticket Sell</title>
+
+    <!-- tilewind css and daisyUi -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- custom tilewind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "primary-clr": "#1cd100",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawsome kit -->
+    <script
+      src="https://kit.fontawesome.com/14d4c2d2a6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header start-->
+    <header>
+      <nav>
+        <div
+          class="navbar bg-base-100 md:max-w-[1170px] mx-auto mt-5 items-center"
+        >
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black text-opacity-70 text-lg font-medium font-raleway"
+              >
+                <li><a>Home</a></li>
+
+                <li><a>About</a></li>
+
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+            <a
+              class="btn btn-ghost md:text-4xl text-black text-2xl font-raleway font-extrabold ml-0"
+              >EX Ticket</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul
+              class="menu menu-horizontal px-1 h-auto text-black text-opacity-70 text-lg font-medium font-raleway"
+            >
+              <li><a>Home</a></li>
+
+              <li><a>About</a></li>
+
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a
+              class="rounded-lg h-auto md:px-7 md:py-3 py-2 px-6 bg-primary-clr bg-opacity-10 border-[1px] border-primary-clr border-opacity-40 text-primary-clr"
+            >
+              <span> Buy</span>
+              <i class="fa-solid fa-bus"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header end -->
+
+    <!-- MAIN START -->
+    <main>
+      <!-- banner section -->
+      <section id="banner" class="max-w-[1170px] mx-auto">
+        <div
+          class="hero bg-cover bg-center min-h-[550px] rounded-[32px] md:mt-7 mt-5"
+          style="
+            background: linear-gradient(
+                180deg,
+                rgba(3, 7, 18, 0.5),
+                rgba(3, 7, 18, 0) 100%
+              ),
+              url(images/banner.png);
+          "
+        >
+          <div class="rounded-2xl"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="">
+              <h1 class="mb-5 text-4xl font-raleway font-extrabold md:text-5xl">
+                End-to-End Travel with <br />
+                <span class="text-primary-clr mt-5 block">EX Travel</span>
+              </h1>
+              <p class="mb-5 max-w-md mx-auto">
+                Unlock more facilities with Ex Paribahan.provide you with 24
+                hours customer services and a very comfortable ride to your
+                destinations./
+              </p>
+              <button
+                class="btn rounded-lg h-auto md:px-7 md:py-3 py-2 px-6 bg-primary-clr border-[1px] border-primary-clr border-opacity-40 text-black font-raleway font-bold"
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- banner section ends -->
+      <!-- best offer section -->
+      <section id="best-offer" class="max-w-[1170px] mx-auto mb-52">
+        <h1
+          class="font-raleway font-bold text-4xl md:mt-36 mt-20 text-center md:mb-12 mb-8"
+        >
+          Best offers for you
+        </h1>
+        <div
+          class="flex flex-col md:flex-row md:items-center justify-center gap-8"
+        >
+          <!-- crd1 -->
+          <div
+            class="grow bg-[#ffbf0f] rounded-2xl md:px-12 md:py-5 flex justify-between items-center box-border"
+          >
+            <div class="font-inter text-left">
+              <h2
+                class="font-black text-[#030712] text-opacity-80 text-4xl leading-[180%]"
+              >
+                15% OFF
+              </h2>
+              <h3
+                class="font-semibold text-[#030712] text-opacity-80 text-xl leading-[180%]"
+              >
+                on your next purchase
+              </h3>
+              <p class="font-medium text-lg text-[#030712] text-opacity-50">
+                use by January 2024
+              </p>
+            </div>
+            <div
+              class="border-l-2 border-dashed md:pl-14 pl-5 py-12 box-border relative before:h-10 before:absolute before:w-10 before:rounded-full md:before:-top-5 before:-top-0 before:left-0 before:-translate-x-1/2 before:-translate-y-1/2 before:bg-white after:h-10 after:absolute after:w-10 after:rounded-full md:after:-bottom-14 after:-bottom-9 after:left-0 after:-translate-x-1/2 after:-translate-y-1/2 after:bg-white"
+            >
+              <h2
+                class="font-raleway text-[#030712] text-opacity-90 font-bold text-3xl leading-[180%]"
+              >
+                NEW15
+              </h2>
+              <p class="text-[#030712] font-raleway text-xl text-opacity-40">
+                Coupon Code
+              </p>
+            </div>
+          </div>
+          <!-- crd 2 -->
+          <div
+            class="grow bg-[#ffbf0f] rounded-2xl md:px-12 md:py-5 flex justify-between items-center box-border"
+          >
+            <div class="font-inter text-left">
+              <h2
+                class="font-black text-[#030712] text-opacity-80 text-4xl leading-[180%]"
+              >
+                15% OFF
+              </h2>
+              <h3
+                class="font-semibold text-[#030712] text-opacity-80 text-xl leading-[180%]"
+              >
+                on your next purchase
+              </h3>
+              <p class="font-medium text-lg text-[#030712] text-opacity-50">
+                use by January 2024
+              </p>
+            </div>
+            <div
+              class="border-l-2 border-dashed md:pl-14 pl-5 py-12 box-border relative before:h-10 before:absolute before:w-10 before:rounded-full md:before:-top-5 before:-top-0 before:left-0 before:-translate-x-1/2 before:-translate-y-1/2 before:bg-white after:h-10 after:absolute after:w-10 after:rounded-full md:after:-bottom-14 after:-bottom-9 after:left-0 after:-translate-x-1/2 after:-translate-y-1/2 after:bg-white"
+            >
+              <h2
+                class="font-raleway text-[#030712] text-opacity-90 font-bold text-3xl leading-[180%]"
+              >
+                NEW15
+              </h2>
+              <p class="text-[#030712] font-raleway text-xl text-opacity-40">
+                Coupon Code
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
