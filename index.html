@@ -460,7 +460,7 @@
                 <div
                   class="seat-container flex items-center justify-around grow"
                 >
-                  <div class="selected seat">I1</div>
+                  <div class="seat">I1</div>
                   <div class="seat">I2</div>
                   <div class="seat">I3</div>
                   <div class="seat">I4</div>
@@ -501,7 +501,7 @@
                 >
                   <h2>
                     Seat
-                    <span id="booked-seat" class="booked-seat-number">2</span>
+                    <span id="booked-seat" class="booked-seat-number">0</span>
                   </h2>
                   <h2>Class</h2>
                   <h2>Price</h2>
@@ -529,13 +529,15 @@
                 </div>
 
                 <!-- coupon input -->
-                <div class="bg-white p-2 flex justify-around">
+                <div class="bg-white p-2 flex justify-around" id="couponbox">
                   <input
                     type="text"
+                    id="coupon"
                     placeholder="Have any coupon?"
                     class="placeholder:font-inter placeholder:pl-3"
                   />
                   <button
+                    id="applyCoupon"
                     class="btn rounded-lg h-auto md:px-4 md:py-3 py-2 px-4 bg-primary-clr border-[1px] border-primary-clr border-opacity-40 text-white font-raleway font-bold"
                     disabled
                   >
@@ -546,6 +548,7 @@
                 <!-- discount ammout -->
                 <div
                   class="flex justify-between font-inter text-lg font-bold py-4 hidden"
+                  id="discountBox"
                 >
                   <h2>Discount</h2>
                   <h3>BDT <span id="discount">550</span></h3>
@@ -577,8 +580,9 @@
                 >Passenger Phone*
                 <input
                   type="tel"
-                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  pattern="[0-9]{10}"
                   placeholder="Enter your phone"
+                  id="phone"
                   required
                   class="w-full border-[#030712] border-opacity-20 border-2 rounded-lg p-5 placeholder:font-normal mt-4"
               /></label>
@@ -596,6 +600,8 @@
               <button
                 type="submit"
                 class="w-full btn rounded-lg h-auto md:px-7 md:py-3 py-2 px-6 bg-primary-clr border-[1px] border-primary-clr border-opacity-40 text-white font-raleway font-bold mt-6 mb-8"
+                id="nextBtn"
+                disabled
               >
                 Next
               </button>
