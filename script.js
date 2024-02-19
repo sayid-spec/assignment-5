@@ -8,7 +8,7 @@ let discountBox = document.getElementById("discountBox");
 let seatLeft = document.getElementById("seat-left");
 let bookedSeat = document.getElementById("booked-seat");
 let nextBtn = document.getElementById("nextBtn");
-console.log(couponBtn);
+// console.log(couponBtn);
 let fairSum = 0;
 let selectedSeatCount = 0;
 // console.log(allSeat, seatData);
@@ -81,13 +81,13 @@ for (let seat of allSeat) {
             }
           });
         }
-
-        //   end
       } else {
         let removeelem = document.querySelector(`.${seatNo}`);
 
         fairSum -= +removeelem.lastChild.innerText;
+
         total.innerText = fairSum;
+        grandTotal.innerText = fairSum;
 
         removeelem.remove();
         selectedSeatCount--;
