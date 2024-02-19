@@ -57,3 +57,18 @@ html {
   justify-content: space-between;
   align-items: center;
 }
+.model {
+  position: relative;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}

@@ -46,7 +46,7 @@
   </head>
   <body class="">
     <!-- header start-->
-    <header>
+    <header class="">
       <nav>
         <div
           class="navbar bg-base-100 md:max-w-[1170px] mx-auto mt-5 items-center"
@@ -112,7 +112,7 @@
     <!-- header end -->
 
     <!-- MAIN START -->
-    <main>
+    <main class="">
       <!-- banner section -->
       <section id="banner" class="max-w-[1170px] mx-auto">
         <div
@@ -565,51 +565,88 @@
             </div>
 
             <!-- passenger info -->
-            <form>
-              <!-- name -->
-              <label for="name" class="font-inter font-semibold mt-5 block"
-                >Passenger Name*
-                <input
-                  type="text"
-                  placeholder="Enter your name"
-                  required
-                  class="w-full border-[#030712] border-opacity-20 border-2 rounded-lg p-5 placeholder:font-normal mt-4"
-              /></label>
-              <!-- phone -->
-              <label for="name" class="font-inter font-semibold mt-5 block"
-                >Passenger Phone*
-                <input
-                  type="tel"
-                  pattern="[0-9]{10}"
-                  placeholder="Enter your phone"
-                  id="phone"
-                  required
-                  class="w-full border-[#030712] border-opacity-20 border-2 rounded-lg p-5 placeholder:font-normal mt-4"
-              /></label>
-              <!-- email -->
-              <label for="name" class="font-inter font-semibold mt-5 block"
-                >Passenger Email*
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  class="w-full border-[#030712] border-opacity-20 border-2 rounded-lg p-5 placeholder:font-normal mt-4"
-              /></label>
 
-              <!-- next buttn -->
+            <!-- name -->
+            <label for="name" class="font-inter font-semibold mt-5 block"
+              >Passenger Name*
+              <input
+                type="text"
+                placeholder="Enter your name"
+                class="w-full border-[#030712] border-opacity-20 border-2 rounded-lg p-5 placeholder:font-normal mt-4"
+            /></label>
+            <!-- phone -->
+            <label for="name" class="font-inter font-semibold mt-5 block"
+              >Passenger Phone*
+              <input
+                type="tel"
+                pattern="[0-9]{10}"
+                placeholder="Enter your phone"
+                id="phone"
+                required
+                class="w-full border-[#030712] border-opacity-20 border-2 rounded-lg p-5 placeholder:font-normal mt-4"
+            /></label>
+            <!-- email -->
+            <label for="name" class="font-inter font-semibold mt-5 block"
+              >Passenger Email*
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="w-full border-[#030712] border-opacity-20 border-2 rounded-lg p-5 placeholder:font-normal mt-4"
+            /></label>
 
-              <button
-                type="submit"
-                class="w-full btn rounded-lg h-auto md:px-7 md:py-3 py-2 px-6 bg-primary-clr border-[1px] border-primary-clr border-opacity-40 text-white font-raleway font-bold mt-6 mb-8"
-                id="nextBtn"
-                disabled
-              >
-                Next
-              </button>
-            </form>
+            <!-- next buttn -->
+
+            <button
+              onclick="openModal()"
+              class="w-full btn rounded-lg h-auto md:px-7 md:py-3 py-2 px-6 bg-primary-clr border-[1px] border-primary-clr border-opacity-40 text-white font-raleway font-bold mt-6 mb-8"
+              id="nextBtn"
+              disabled
+            >
+              Next
+            </button>
           </div>
         </div>
       </section>
     </main>
+
+    <div
+      id="modal"
+      class="box-border py-20 px-16 bg-gray-100 flex justify-center items-center hidden"
+    >
+      <div
+        class="model w-80% mx-auto py-14 px-5 border-2 border-solid bg-white"
+      >
+        <div class="w-full flex flex-col justify-center items-center">
+          <img src="images/success.png" width="100px" alt="" />
+          <h1 class="text-center text-priamry-clr font-bold text-2xl my-7">
+            success
+          </h1>
+        </div>
+        <div class="text-center max-w-[560px]">
+          <p
+            class="font-inter font-semibold text-[#030712] text-xl text-opacity-80"
+          >
+            Thank you for Booking Our Bus Seats. We are working hard to find the
+            best service and deals for you.
+          </p>
+
+          <p
+            class="font-inter font-medium text-[#030712] text-lg text-opacity-30"
+          >
+            Shortly you will find a confirmation in your email.
+          </p>
+        </div>
+
+        <div class="max-w-[300px] mx-auto">
+          <button
+            class="w-full btn rounded-lg h-auto md:px-7 md:py-3 py-2 px-6 bg-primary-clr border-[1px] border-primary-clr border-opacity-40 text-white font-raleway font-bold mt-6 mb-8"
+            id="continueBtn"
+          >
+            continue
+          </button>
+        </div>
+      </div>
+    </div>
 
     <!-- utitlity -->
     <script src="utility.js"></script>
